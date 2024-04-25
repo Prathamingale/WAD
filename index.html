@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Boilerplate HTML stuff -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Our page's title and custom styling file -->
+		<title>Pratham Ingale</title>
+		<link rel="stylesheet" href="website.css" type="text/css">
+
+		<!-- Bootstrap files -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<!-- Make the navbar "sticky" (sticks to top of screen) -->
+		<div class="sticky-top">
+			
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center">
+				
+				<a class="navbar-brand d-flex w-50 mr-auto" href="#home">Pratham Ingale</a>
+
+				<!-- This button replaces the links list when in mobile. -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="nav">
+					<ul class="nav navbar-nav mr-auto justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#photography">Photography</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+		</div>
+
+		<!-- Page content -->
+		<div class="container-fluid">
+
+			<div class="col main">
+
+				<!-- Greeting section -->
+				<div class="row section" id="home">
+					<div class="bigtext">
+						<h1>Pratham Ingale</h1>
+						<h4>Photography that shines</h4>
+					</div>
+				</div>
+	
+
+				<!-- About section -->
+				<div class="row section" id="about">
+					<div class="col-3">
+						<img src="img1.jpeg" class="img-fluid">
+					</div>
+					<div class="col-9">
+						<h2>Hi, I'm Pratham.</h2>
+						<span class="align-middle">
+							<p>Welcome to my automotive photography website, where I showcase my passion for capturing the beauty and power of cars through the lens. With a keen eye for detail and a deep appreciation for the artistry and engineering that goes into each vehicle, I strive to create images that not only show the exterior and interior of the car, but also capture its soul.
+
+                                My portfolio includes a wide range of vehicles, from classic cars and muscle cars to modern supercars and luxury vehicles. I have worked with private collectors, car dealerships, and automotive manufacturers to create images that highlight the unique features and personality of each car.
+                                
+                                Whether you are a car enthusiast, a collector, or an automotive industry professional, I hope you enjoy browsing my website and exploring my work. If you have any questions or would like to discuss a potential project, please don't hesitate to contact me. Thank you for visiting.
+							</p>
+							<p>Whether it's a candid portrait, a breathtaking landscape,
+								or a vibrant street scene, our goal is to freeze time and
+								preserve memories that will last a lifetime. Join us as
+								we explore the beauty of the world through the art of 
+								photography.
+							</p>
+							<button id="cvbutton" type="button" onclick="window.location.href = '#' ">Check out my CV</button>
+						</span>
+					</div>
+				</div>
+	
+
+				<!-- Photography section -->
+				<div class="row section" id="photography">
+					<div class="column-fluid" id="photodesc">
+						<h2>Photography</h2>
+						<p>
+							Discover the enchanting allure of car through our captivating photography. Explore dreamy car and super car in race, adding tranquility to any space. Elevate your décor with the timeless beauty of automotive.
+						</p>
+
+                        <!-- Photo gallery -->
+						<div class="row">
+							<div class="col-4">
+								<div class="thumbnail">
+									<img src="img2.jpeg" class="img-fluid">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="thumbnail">
+									<img src="img3.jpeg" class="img-fluid">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="thumbnail">
+									<img src="img4.jpeg" class="img-fluid">
+								</div>
+                            </div>
+                        </div>
+                        <div class="row">
+							<div class="col-4">
+								<div class="thumbnail">
+									<img src="img5.jpeg" class="img-fluid">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="thumbnail">
+									<img src="img2.jpeg" class="img-fluid">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="thumbnail">
+									<img src="img6.jpeg" class="img-fluid">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+	
+
+				<!-- Contact section -->
+				<div class="row section" id="contact">
+                    <div class="bigtext">
+                        <h1 class="text-center">Looking for a photo shoot?</h1>
+                        <p>Look no further. Contact me at <a href="#">prathamingale2727@gmail.com</a> or drop me a line at +91 8605327111</p>
+                        <br>
+                        <p>Find me on the below platforms too:</p>
+                        <p><a href="#">Instagram</a> • <a href="#">facebook</a> • <a href="#">LinkedIn</a></p>
+                    </div>
+				</div>
+
+			</div>
+			
+		</div>
+
+	</body>
+
+</html>

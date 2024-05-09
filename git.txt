@@ -1,0 +1,32 @@
+
+git init
+
+git add.
+
+git status
+
+git remote add origin "url of the remote repository"
+
+git commit -m "First Commit"
+
+git status
+
+git push u origin master
+
+2) adding second file to the repository git add.
+
+git status
+
+git commit -m "Second commit"
+
+git push
+
+3) modify any file and push to the repository
+
+git add.
+
+git status
+
+git commit -m "Modify"
+
+git push

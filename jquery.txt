@@ -1,263 +1,80 @@
-//index
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShopStop</title>
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>Mobile Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <style>
-        img {
-            margin: 20px;
-            height: 400px;
-            width: 300px;
-            border-radius: 10px;
-        }
-
-        #shadow {
-            text-shadow: 10px 2px 7px yellowgreen;
-            font-size: 20px;
-        }
-
-        .fl {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .product {
-            margin: 20px;
-            text-align: center;
-        }
-
-        img:hover {
-            cursor: pointer;
-            transform: scale(1.1);
-            box-shadow: 2px 2px 10px black;
-        }
-    </style>
 </head>
 
 <body>
-    <div data-role="page" id="main">
-        <div data-role="header" data-theme="b">
-            <h1>ShopStop</h1>
+
+    <div data-role="page" id="home">
+
+        <div data-role="header">
+            <h1>Mobile Website</h1>
         </div>
-        <div data-role="navbar" data-grid="c">
-            <ul>
-                <li><a href="#" class="ui-btn-active">Home</a></li>
-                <li><a href="#" class="ui-btn-active">About us</a></li>
-                <li><a href="#" class="ui-btn-active">Products</a></li>
-                <li><a href="./register.html" class="ui-btn-active">Login/Register</a></li>
-            </ul>
-        </div>
-        <center>
-            <h3>Products</h3>
-        </center>
-        <div data-role="content">
-            <div class="rows" id="products">
-                <center>
-                    <p id="shadow">Shoes & Watches</p>
-                </center>
-                <div class="fl">
-                    <div class="product">
-                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D"
-                            alt="products" />
-                        <p>₹4999 <button class="add-to-cart" data-price="4999">Add to Cart</button></p>
-                    </div>
-                    <div class="product">
-                        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2hvZXN8ZW58MHx8MHx8fDA%3D%22"
-                            alt="products" />
-                        <p>₹2999 <button class="add-to-cart" data-price="2999">Add to Cart</button></p>
-                    </div>
-                    <div class="product">
-                        <img src="https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2F0Y2hlc3xlbnwwfHwwfHx8MA%3D%3D"
-                            alt="products" />
-                        <p>₹8999 <button class="add-to-cart" data-price="8999">Add to Cart</button></p>
-                    </div>
-                    <div class="product">
-                        <img src="https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdhdGNoZXN8ZW58MHx8MHx8fDA%3D"
-                            alt="products" />
-                        <p>₹1999 <button class="add-to-cart" data-price="1999">Add to Cart</button></p>
-                    </div>
-                    <div class="product">
-                        <img src="https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdhdGNoZXN8ZW58MHx8MHx8fDA%3D"
-                            alt="products" />
-                        <p>₹1999 <button class="add-to-cart" data-price="1999">Add to Cart</button></p>
-                    </div>
-                    <div class="product">
-                        <img src="https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdhdGNoZXN8ZW58MHx8MHx8fDA%3D"
-                            alt="products" />
-                        <p>₹1999 <button class="add-to-cart" data-price="1999">Add to Cart</button></p>
-                    </div>
+
+        <div class="ui-content">
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><button id="openPanel">Open Panel</button></div>
+                <div class="ui-block-b"><button id="openDialog">Open Dialog</button></div>
+            </div>
+
+            <div data-role="panel" id="menu" data-display="overlay">
+                <ul data-role="listview">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div data-role="popup" id="dialog" data-overlay-theme="a" data-theme="a" data-dismissible="true"
+                style="max-width:400px;">
+                <div class="ui-content">
+                    <h3>Dialog Box</h3>
+                    <p>This is a dialog box. Click outside to close.</p>
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Close</a>
                 </div>
             </div>
+
+            <label for="slider">Slider:</label>
+            <input type="range" name="slider" id="slider" value="50" min="0" max="100">
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="https://tse1.mm.bing.net/th?id=OIP.TqRw9_OZAgHCbZobqFC5JAHaFj&pid=Api&P=0&h=220" class="ui-btn-active">Image1</a></li>
+                    <li><a href="https://tse3.mm.bing.net/th?id=OIP.egDl4UXxpNjRL4nwkJo-6gHaE8&pid=Api&P=0&h=220">Image2</a></li>
+                    <li><a href="https://tse1.mm.bing.net/th?id=OIP.x4s3puUdx55RFefTsJMCjQHaEK&pid=Api&P=0&h=220">Image3</a></li>
+                    <li><a href="https://tse1.mm.bing.net/th?id=OIP.gbyEzELO8U2LZoLmPq_sAwHaEo&pid=Api&P=0&h=220">Image4</a></li>
+                </ul>
+            </div>
+
         </div>
-        <hr>
-        <div class="footer" id="ab">
-            <center>
-                <p>Email : ShopStop@gmail.com</p>
-                <p>pincode : 411041</p>
-            </center>
-            <center>
-                <h2>All Rights Are Reserved &copy</h2>
-            </center>
+
+        <div data-role="footer">
+            <h4>Mobile Website</h4>
         </div>
+
     </div>
 
     <script>
-        $(document).ready(function () {
+        $(document).on("pagecreate", function () {
+            $("#openPanel").on("click", function () {
+                $("#menu").panel("open");
+            });
 
-            var cart = [];
-
-            $(".add-to-cart").click(function () {
-                var price = parseInt($(this).data("price"));
-                cart.push(price);
-                alert("Item added to cart!");
-                console.log(cart);
+            $("#openDialog").on("click", function () {
+                $("#dialog").popup("open");
             });
         });
     </script>
 
-
-
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-//form
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login/Register</title>
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <style>
-        a {
-            text-decoration: none;
-            font-size: 20px;
-        }
-    </style>
-</head>
-
-<body>
-    <div data-role="header" data-theme="b">
-        <h1>ShopStop</h1>
-    </div>
-    <div data-role="navbar" data-grid="c">
-        <ul>
-            <li><a href="./index.html"> Home </a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="" class="ui-btn-active">Login/Register</a></li>
-        </ul>
-    </div>
-    <center>
-        <h3>Login/Register</h3>
-    </center>
-    <div data-role="content">
-        <form action="#">
-            <label>Name</label>
-            <input type="text" placeholder="Enter Your Name" />
-            <label>Date Of Birth</label>
-            <input type="date" placeholder="Enter Your date Of birth" />
-            <label>Address</label>
-            <textarea cols="30" rows="10" placeholder="Your Address......."></textarea>
-            <label>Email</label>
-            <input type="Email" placeholder="Enter Your Email" />
-            <label>Password</label>
-            <input type="password" placeholder="Enter Password" />
-            <label>Confirm password</label>
-            <input type="password" placeholder="Enter Password again" />
-            <input type="submit" value="Register" />
-            <!-- <button>Register</button> -->
-        </form>
-        <center><a href="./log.html">Already Registered? Login</a></center>
-    </div>
-    <div class="footer">
-        <center>
-            <h2>All Rights Are Reserved &copy</h2>
-        </center>
-    </div>
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//log
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
-
-<body>
-    <div data-role="header" data-theme="b">
-        <h1>ShopStop</h1>
-    </div>
-    <div data-role="navbar" data-grid="c">
-        <ul>
-            <li><a href="./index.html" class="ui-btn-active"> Home </a></li>
-            <li><a href="#" class="ui-btn-active">About us</a></li>
-            <li><a href="#" class="ui-btn-active">Products</a></li>
-            <li>
-                <a href="./register.html" class="ui-btn-active">Login/Register</a>
-            </li>
-        </ul>
-    </div>
-    <center>
-        <h3>Login</h3>
-    </center>
-
-    <div data-role="content">
-        <form action="#">
-            <label>Email</label>
-            <input type="Email" placeholder="Enter Your Email" />
-            <label>Password</label>
-            <input type="password" placeholder="Enter Password" />
-            <input type="submit" value="Register" />
-
-        </form>
-    </div>
 </body>
 
 </html>
